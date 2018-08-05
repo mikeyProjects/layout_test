@@ -1,0 +1,21 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass style/main.scss style/main.css -w",
+    "compile": "node-sass style/main.scss style/main.css",
+    "prefix": "postcss style/main.css --use autoprefixer -o style/main.css",
+    "compress": "node-sass style/main.css style/main.css --output-style compressed",
+    "build": "npm-run-all compile prefix compress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0"
+  }
+}

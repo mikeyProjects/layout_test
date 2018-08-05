@@ -1,0 +1,16 @@
+body {
+  font-size: 12px;
+  box-sizing: border-box;
+  font-family: 'Lato', serif;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
